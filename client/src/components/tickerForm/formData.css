@@ -1,0 +1,71 @@
+.ticker-form {
+  background-color: #f7f5f2;
+  border-radius: 0.375rem;
+  box-shadow: 3px 3px 3px #413f42;
+  padding: 0.25rem;
+  margin: 5px 10px 8px;
+  text-align: center;
+}
+.ticker-form:hover {
+  background-color: #e0dede;
+  transform: scale(0.99);
+}
+.ticker-form div {
+  display: inline-block;
+}
+.ticker-form ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  justify-content: space-between;
+  margin: 5px;
+}
+.ticker-form li {
+  border-radius: 0.375rem;
+  text-align: center;
+}
+.ticker {
+  color: #ffffff;
+  width: 4rem;
+}
+.change,
+.cng-prcnt {
+  width: 4rem;
+}
+.dividend,
+.exchange {
+  width: 4.5rem;
+}
+.price {
+  width: 3.5rem;
+}
+.yield {
+  width: 2.5rem;
+}
+.lst-trd-tm {
+  width: 12.5rem;
+}
+
+@media (max-width: 720px) {
+  .yield,
+  .lst-trd-tm {
+    display: none;
+  }
+}
+@media (max-width: 469px) {
+  .exchange,
+  .dividend,
+  .yield,
+  .lst-trd-tm {
+    display: none;
+  }
+}
+@media (max-width: 362px) {
+  .exchange,
+  .change,
+  .dividend,
+  .yield,
+  .lst-trd-tm {
+    display: none;
+  }
+}
