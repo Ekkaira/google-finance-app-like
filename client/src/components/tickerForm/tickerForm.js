@@ -10,16 +10,16 @@ const TickerForm = () => {
       {quotes.map((data, index) => (
         <FormData
           quote={data}
+          id={data.ticker}
           key={index}
           ticker={data.ticker}
           exchange={data.exchange}
-          rice={data.price}
+          price={data.price}
           change={data.change}
           change_percent={data.change_percent}
           dividend={data.dividend}
-          yieldd={data.yieldd}
+          yield={data.yield}
           last_trade_time={data.last_trade_time}
-          diff={data.diff}
         />
       ))}
     </div>

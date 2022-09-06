@@ -7,22 +7,34 @@ function ButtonSection() {
     <div className="buttons-container">
       <ul className="ticker-buttons">
         <li>
-          <button className="aapl">AAPL</button>
+          <button id="AAPL" className="aapl">
+            AAPL
+          </button>
         </li>
         <li>
-          <button className="googl">GOOGL</button>
+          <button id="GOOGL" className="googl">
+            GOOGL
+          </button>
         </li>
         <li>
-          <button className="msft">MSFT</button>
+          <button id="MSFT" className="msft">
+            MSFT
+          </button>
         </li>
         <li>
-          <button className="amzn">AMZN</button>
+          <button id="AMZN" className="amzn">
+            AMZN
+          </button>
         </li>
         <li>
-          <button className="meta">META</button>
+          <button id="META" className="meta">
+            META
+          </button>
         </li>
         <li>
-          <button className="tsla">TSLA</button>
+          <button id="TSLA" className="tsla">
+            TSLA
+          </button>
         </li>
       </ul>
     </div>

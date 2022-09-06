@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  box-shadow: 3px 3px 3px #413f42;
-  margin: 15px;
-  background: #888888;
+  display: block;
+  margin: 0px;
 }

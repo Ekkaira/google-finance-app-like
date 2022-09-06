@@ -22,7 +22,7 @@ const FormData = ({ quote, index }) => {
 
   return (
     <div className="ticker-form">
-      <ul key={index}>
+      <ul id={quote.ticker} key={index}>
         <li className="ticker" style={{ backgroundColor: logoColor }}>
           {quote.ticker}
         </li>

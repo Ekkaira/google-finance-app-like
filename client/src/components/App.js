@@ -7,6 +7,7 @@ import ButtonSection from "./buttons/buttonSection";
 import Dashboard from "./dashboard/dashboard";
 import TickerForm from "./tickerForm/tickerForm";
 import { trackTickers } from "../store/reducers/tickersReducer";
+import Footer from "./footer/footer";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -16,10 +17,13 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div className="app-container">
-      <ButtonSection />
-      <Dashboard />
-      <TickerForm />
+    <div>
+      <div className="main">
+        <ButtonSection />
+        <Dashboard />
+        <TickerForm />
+      </div>
+      <Footer />
     </div>
   );
 };
