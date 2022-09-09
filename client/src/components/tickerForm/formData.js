@@ -4,7 +4,7 @@ import "./formData.css";
 
 import TickerColor from "./tickerColor";
 
-const FormData = ({ quote, index }) => {
+const FormData = ({ quote }) => {
   const logoColor = TickerColor(quote.ticker);
   let Color = "";
   let Arrow = "";
@@ -22,7 +22,7 @@ const FormData = ({ quote, index }) => {
 
   return (
     <div className="ticker-form">
-      <ul id={quote.ticker} key={index}>
+      <ul id={quote.ticker} key={quote.ticker}>
         <li className="ticker" style={{ backgroundColor: logoColor }}>
           {quote.ticker}
         </li>
