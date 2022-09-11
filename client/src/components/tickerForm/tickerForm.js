@@ -1,18 +1,10 @@
 import React from "react";
 import FormData from "./formData";
-import { useSelector, useDispatch } from "react-redux";
-import { addTicker, removeTicker } from "../../store/reducers/tickersReducer";
+import { useSelector } from "react-redux";
 import "./tickerForm.css";
 
 const TickerForm = () => {
-  const dispatch = useDispatch();
   const quotes = useSelector((state) => state.tickers.quotes);
-
-  const handleAddTicker = (ticker) => {
-    dispatch(addTicker(ticker));
-  };
-
-  // {quotes.map((data) => ())}
 
   return (
     <React.Fragment>
@@ -44,76 +36,6 @@ const TickerForm = () => {
             last_trade_time={data.last_trade_time}
           />
         ))}
-        <div className="buttons-container">
-          <ul className="ticker-buttons">
-            <li>
-              <button
-                id="AAPL"
-                className="aapl"
-                onClick={() => {
-                  handleAddTicker("AAPL");
-                }}
-              >
-                AAPL
-              </button>
-            </li>
-            <li>
-              <button
-                id="GOOGL"
-                className="googl"
-                onClick={() => {
-                  handleAddTicker("GOOGL");
-                }}
-              >
-                GOOGL
-              </button>
-            </li>
-            <li>
-              <button
-                id="MSFT"
-                className="msft"
-                onClick={() => {
-                  handleAddTicker("MSFT");
-                }}
-              >
-                MSFT
-              </button>
-            </li>
-            <li>
-              <button
-                id="AMZN"
-                className="amzn"
-                onClick={() => {
-                  handleAddTicker("AMZN");
-                }}
-              >
-                AMZN
-              </button>
-            </li>
-            <li>
-              <button
-                id="META"
-                className="meta"
-                onClick={() => {
-                  handleAddTicker("META");
-                }}
-              >
-                META
-              </button>
-            </li>
-            <li>
-              <button
-                id="TSLA"
-                className="tsla"
-                onClick={() => {
-                  handleAddTicker("TSLA");
-                }}
-              >
-                TSLA
-              </button>
-            </li>
-          </ul>
-        </div>
       </div>
     </React.Fragment>
   );
